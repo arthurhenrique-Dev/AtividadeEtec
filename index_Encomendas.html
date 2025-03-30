@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 4</title>
+</head>
+<body>
+    <header>
+        <h1>
+            Pães, Doces e Bolos
+        </h1>
+        <ul>
+            <li>
+                <a href="index.html">
+                    Página Principal
+                </a>
+            </li>
+            <li>
+                <a href="index_Encomendas.html">
+                    Encomendar Bolo
+                </a>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <h2>
+            Encomendar Bolo
+        </h2>
+        <form action="" method="get">
+        <p>
+            Nome
+            <input type="text" placeholder="Informe o nome">
+            DDD 
+            (<input type="text" placeholder="DDD" maxlength="2" size="2">)
+            Telefone: 
+            <input type="text" placeholder="Telefone" maxlength="9" size="9">
+        </p>
+        <table border>
+            <tr>
+                <td>
+                    <img src="images/Bolo01.png" width="200" alt="Bolo de chocolate">
+                </td>
+                <td>
+                    <img src="images/Bolo02.png" width="200" alt="Bolo de Frutas">
+                </td>
+                <td>
+                    <img src="images/Bolo03.png" width="200" alt="Bolo Misto">
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    chocolate
+                </th>
+                <th>
+                    Frutas
+                </th>
+                <th>
+                    Misto
+                </th>
+            </tr>
+        </table>
+        <p>
+            Sabor:
+            <select name="Sabor">
+                <option value="null">Escolha...</option>
+                <option value="Cho">Chocolate</option>
+                <option value="Fru">Frutas</option>
+                <option value="Mis">Misto</option>
+            </select>
+            Tipo: 
+                <input type="radio" name="type">Simples
+                <input type="radio" name="type">Decorado
+        </p>
+        <p>
+            Tamanho:
+            <input type="text" size="3"> kg
+            <input type="checkbox"> Diet? 
+        </p>
+        <p>
+            Observações:
+        </p>
+        <textarea name="obs" id="" placeholder="Observações sobre o pedido" rows="3" cols="80"></textarea>
+        <button type="submit">
+            Enviar Pedido
+        </button>
+        <button type="reset">
+            Limpar
+        </button>
+    </form>
+    </main>
