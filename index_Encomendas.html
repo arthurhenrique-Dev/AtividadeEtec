@@ -30,12 +30,13 @@
         <form action="" method="get">
         <p>
             Nome
-            <input type="text" placeholder="Informe o nome">
+            <input type="text" placeholder="Informe o nome" maxlength="35" autofocus>
             DDD 
             (<input type="text" placeholder="DDD" maxlength="2" size="2">)
             Telefone: 
             <input type="text" placeholder="Telefone" maxlength="9" size="9">
         </p>
+        <br>
         <table border>
             <tr>
                 <td>
@@ -61,25 +62,34 @@
             </tr>
         </table>
         <p>
-            Sabor:
-            <select name="Sabor">
+            <label for="sabor">
+                Sabor:
+            </label>
+            <select name="Sabor" id="sabor">
                 <option value="null">Escolha...</option>
                 <option value="Cho">Chocolate</option>
                 <option value="Fru">Frutas</option>
                 <option value="Mis">Misto</option>
             </select>
-            Tipo: 
-                <input type="radio" name="type">Simples
-                <input type="radio" name="type">Decorado
+            <label for="modelo-bolo">
+                Tipo:
+            </label>
+            <input type="radio" name="modelo-bolo">Simples
+            <input type="radio" name="modelo-bolo">Decorado
         </p>
+        <br>
         <p>
-            Tamanho:
-            <input type="text" size="3"> kg
+            <label for="">
+                Tamanho:
+            </label>
+            <input type="number" min="1" max="10"> kg
             <input type="checkbox"> Diet? 
         </p>
+        <br>
         <p>
             Observações:
         </p>
+        <br>
         <textarea name="obs" id="" placeholder="Observações sobre o pedido" rows="3" cols="80"></textarea>
         <button type="submit">
             Enviar Pedido
